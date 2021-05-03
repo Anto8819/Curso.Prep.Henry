@@ -1,0 +1,20 @@
+Homework 5 - JS IV
+Objetos : Es un contenedor de datos que contiene n propiedades del objeto con sus valores correspondientes. 
+Contiene mucha información sobre una misma cosa.
+Propiedades : Es es tipo de información que tiene el objeto sobre sí mismo. En JS es la primer parte del key value, 
+es el key. Cada propiedad tiene un valor asignado (el value del key value) dentro del objeto. 
+Métodos : Los métodos son una clase especial de propiedad de los objetos, cuyo valor está definido
+como una una función. (function). Los métodos .lenght .push .pop son algunos ejemplos.
+Bucle for…in : Es un bucle que se usa para iterar sobre los key value de un objeto. Es decir, cuando queremos hacer 
+los mismo sobre cada uno de los key value, en lugar de programar una función para cada key value, programamos 
+una sola función dentro del bucle For.. in declarando una variable x que hará las veces de las propiedades
+dentro del objeto. La sintaxis es
+For (let x in objeto) { //lo que querramos hacer con cada key value reemplazando el nombre de la propiedad por x
+; } 
+Notación de puntos vs notación de corchetes : para llegar al valor de una propiedad contenido en un objeto, tenemos
+2 formas de hacerlo. 1) llamando al objeto y a la propiedad con una separación de punto. Ej: objeto.propiedad
+Es lo que hacemos cuando queremos saber la longitud de un string o de un array y usamos nombredelarray.lenght
+2) poniendo la propiedad entre corchetes despues del objeto. Ej: objeto['propiedad'] Esta es la forma más literal
+de hacerla y por eso necesitamos agregar '' cuando la propiedad es un string, también puede haber variables dentro
+de los corchetes, siempre que las variables se correspondan con la propiedad del objeto (previamente hay que 
+nombrar la variable y definirla como la propiedad, ej: var propiedad = 'propiedad'). 

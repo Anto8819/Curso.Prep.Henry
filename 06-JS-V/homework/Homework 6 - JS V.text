@@ -1,0 +1,19 @@
+prototype: Un prototipo es el objeto madre de cada cosa dentro JS que define su estructura. 
+Entonces JS primero busca la propiedad que estamos llamando dentro del objeto y si no la encuentra
+la busca en su prototipo. Lo que nos sirve para programar funciones una sola vez en el prototipo para 
+que aplique a todos los objetos. Esto se hace a través de la porpiedad .proptype que esta en todas las Clases
+de objetos. Esta propiedad podemos establecerla luego en métodos (funciones) que aplicaran para cada objeto 
+instanciado como esa clase, así: clase.prototype.metodo = function {...}. Luego al crear los objetos
+de esa clase con NEW el prototipo de esos objetos tendrá el método. Entonce cuando llamemos al meotodo
+objetox.metodo() JS retornará la función definida aunque la propiedad no esté incluida en la clase porque
+esta en el prototipo.
+
+Constructors (de Clases)
+Las clases son plantillas para crear objetos que comparten las mismas propiedades y metodos. El constructor
+de clases nos permite crear esas plantillas. Supongamos que use el constructor de clases para crear la 
+plantilla Clientes. Ahora tengo que instanciar (crear) los objetos que tomarán las propiedades de Clientes.
+Esto lo hacemos con la palabra clave new. EJ creando a JOsefina: var Josefina = new Clientes (xx,xx, ...).
+Para construir una clase, usamos una función constructora, que tiene la sintaxis de una función normal
+con la particularidad que no retorna nada y que en lugar del nombre de los objetos usa la palabra clase this
+para hacer referencia al objeto (aun sin definir el objeto en primer lugar) . Los argumentos de la función
+constructora son las propiedades de la clase.
