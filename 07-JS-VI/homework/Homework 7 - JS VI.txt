@@ -1,0 +1,3 @@
+Homework 7 - JS VI
+funciones callbacks: Son funciones dentro de otras funciones. Es decir que una función callback es
+una función que hace las veces de agumento en otra función. 
